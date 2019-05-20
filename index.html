@@ -13,7 +13,8 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <!-- Gallery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.min.css">
     <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
 </head>
@@ -22,73 +23,259 @@
 
 <div class="cover-container d-flex h-100 w-100 p-3 justify-content-center align-items-center">
     <div class="left-container w-25 d-flex p-3 flex-column justify-content-center align-items-start">
-        <img src="images/logo.png" alt="Kin Labs" width="150">
-        <p> </p>
-        <p>We are a small, independent game studio based in Waterloo, Canada. We build hyper casual mobile games that are easy to learn, difficult to master and more importantly, powered by Kin. Currently, we have 18 games in development.</p>
-        <p><img class="pr-2" src="images/email-icon.png" alt="Email: " width="25">support@kinlabs.com</p>
+            <img src="images/logo.gif" alt="" width="40px" height="auto">
+<!--            <img src="images/logo2.png" alt="" width="100">-->
+        <p></p>
+        <p><b>Kin Labs</b> is a small, independent game studio based in Waterloo, Canada. We build hyper casual mobile games that are easy to learn, difficult to master and more importantly, powered by Kin. Currently, we have 18 games in development.</p>
+        <div class="d-flex justify-content-center align-items-center">
+            <img class="pr-1" src="images/email-icon.png" alt="Email: " width="20px" height="auto">
+            <span class="text-muted">hello@kinlabs.com</span>
+        </div>
+
     </div>
     <div class="p-3"></div>
     <div class="right-container d-flex p-3 flex-column flex-grow-1 justify-content-center align-items-center">
         <div class="d-flex w-100 justify-content-between align-items-center">
-            <input type="image" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon0.png" alt="" width="50" data-toggle="modal" data-target="#modal0">
-            <input type="image" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon1.png" alt="" width="50" data-toggle="modal" data-target="#modal0">
-            <input type="image" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon2.png" alt="" width="50" data-toggle="modal" data-target="#modal0">
-            <input type="image" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon3.png" alt="" width="50" data-toggle="modal" data-target="#modal0">
-            <input type="image" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon4.png" alt="" width="50" data-toggle="modal" data-target="#modal0">
+            <input type="image" onclick="gallery0()" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon0.png" alt="" width="50">
+            <input type="image" onclick="gallery1()" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon1.png" alt="" width="50">
+            <input type="image" onclick="gallery2()" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon2.png" alt="" width="50">
+            <input type="image" onclick="gallery3()" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon3.png" alt="" width="50">
+            <input type="image" onclick="gallery4()" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon4.png" alt="" width="50">
         </div>
         <div class="d-flex w-100 justify-content-between align-items-center">
-            <input type="image" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon5.png" alt="" width="50" data-toggle="modal" data-target="#modal0">
-            <input type="image" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon6.png" alt="" width="50" data-toggle="modal" data-target="#modal0">
-            <input type="image" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon7.png" alt="" width="50" data-toggle="modal" data-target="#modal0">
-            <input type="image" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon8.png" alt="" width="50" data-toggle="modal" data-target="#modal0">
-            <input type="image" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon9.png" alt="" width="50" data-toggle="modal" data-target="#modal0">
+            <input type="image" onclick="gallery5()" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon5.png" alt="" width="50">
+            <input type="image" onclick="gallery6()" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon6.png" alt="" width="50">
+            <input type="image" onclick="gallery7()" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon7.png" alt="" width="50">
+            <input type="image" onclick="gallery8()" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon8.png" alt="" width="50">
+            <input type="image" onclick="gallery9()" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon9.png" alt="" width="50">
         </div>
         <div class="d-flex w-100 justify-content-between align-items-center">
-            <input type="image" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon10.png" alt="" width="50" data-toggle="modal" data-target="#modal0">
-            <input type="image" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon11.png" alt="" width="50" data-toggle="modal" data-target="#modal0">
-            <input type="image" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon12.png" alt="" width="50" data-toggle="modal" data-target="#modal0">
-            <input type="image" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon13.png" alt="" width="50" data-toggle="modal" data-target="#modal0">
-            <input type="image" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon14.png" alt="" width="50" data-toggle="modal" data-target="#modal0">
+            <input type="image" onclick="gallery10()" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon10.png" alt="" width="50">
+            <input type="image" onclick="gallery11()" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon11.png" alt="" width="50">
+            <input type="image" onclick="gallery12()" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon12.png" alt="" width="50">
+            <input type="image" onclick="gallery13()" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon13.png" alt="" width="50">
+            <input type="image" onclick="gallery14()" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon14.png" alt="" width="50">
         </div>
         <div class="d-flex w-100 justify-content-between align-items-center">
-            <input type="image" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon15.png" alt="" width="50" data-toggle="modal" data-target="#modal0">
-            <input type="image" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon16.png" alt="" width="50" data-toggle="modal" data-target="#modal0">
-            <input type="image" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon17.png" alt="" width="50" data-toggle="modal" data-target="#modal0">
+            <input type="image" onclick="gallery15()" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon15.png" alt="" width="50">
+            <input type="image" onclick="gallery16()" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon16.png" alt="" width="50">
+            <input type="image" onclick="gallery17()" class="icons ml-3 mr-3 mt-4 mb-4" src="images/icon17.png" alt="" width="50">
             <input type="image" class="icons ml-3 mr-3 mt-4 mb-4" src="" alt="" width="50">
             <input type="image" class="icons ml-3 mr-3 mt-4 mb-4" src="" alt="" width="50">
         </div>
 
     </div>
 
-    <!-- Gallery Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
+    <!-- Galleries-->
+    <div class="gallery0">
+        <a class="lightbox" href="images/Game 0 Mockup-01.png"></a>
+        <a class="lightbox" href="images/Game 0 Mockup-02.jpeg"></a>
+        <a class="lightbox" href="images/Game 0 Mockup-03.jpeg"></a>
+        <a class="lightbox" href="images/Game 0 Mockup-04.jpeg"></a>
+        <a class="lightbox" href="images/Game 0 Mockup-05.jpeg"></a>
+    </div>
+
+    <div class="gallery1">
+        <a class="lightbox" href="images/Game 1 Mockup-01.png"></a>
+        <a class="lightbox" href="images/Game 1 Mockup-02.png"></a>
+        <a class="lightbox" href="images/Game 1 Mockup-03.png"></a>
+        <a class="lightbox" href="images/Game 1 Mockup-04.png"></a>
+        <a class="lightbox" href="images/Game 1 Mockup-05.png"></a>
+    </div>
+
+    <div class="gallery2">
+        <a class="lightbox" href="images/Game 2 Mockup-05.png"></a>
+        <a class="lightbox" href="images/Game 2 Mockup-01.png"></a>
+        <a class="lightbox" href="images/Game 2 Mockup-02.png"></a>
+        <a class="lightbox" href="images/Game 2 Mockup-03.png"></a>
+        <a class="lightbox" href="images/Game 2 Mockup-04.png"></a>
+    </div>
+
+    <div class="gallery3">
+        <a class="lightbox" href="images/Game 3 Mockup-04.png"></a>
+        <a class="lightbox" href="images/Game 3 Mockup-01.png"></a>
+        <a class="lightbox" href="images/Game 3 Mockup-02.png"></a>
+        <a class="lightbox" href="images/Game 3 Mockup-03.png"></a>
+    </div>
+
+    <div class="gallery4">
+        <a class="lightbox" href="images/Game 4 Mockup-01.png"></a>
+        <a class="lightbox" href="images/Game 4 Mockup-02.png"></a>
+        <a class="lightbox" href="images/Game 4 Mockup-03.png"></a>
+        <a class="lightbox" href="images/Game 4 Mockup-04.png"></a>
+    </div>
+
+    <div class="gallery5">
+        <a class="lightbox" href="images/Game 5 Mockup-01.png"></a>
+        <a class="lightbox" href="images/Game 5 Mockup-02.png"></a>
+        <a class="lightbox" href="images/Game 5 Mockup-03.png"></a>
+        <a class="lightbox" href="images/Game 5 Mockup-04.png"></a>
+    </div>
+
+    <div class="gallery6">
+        <a class="lightbox" href="images/Game 6 Mockup-02.png"></a>
+        <a class="lightbox" href="images/Game 6 Mockup-01.png"></a>
+        <a class="lightbox" href="images/Game 6 Mockup-03.png"></a>
+        <a class="lightbox" href="images/Game 6 Mockup-04.png"></a>
+    </div>
+
+    <div class="gallery7">
+        <a class="lightbox" href="images/Game 7 Mockup-01.png"></a>
+        <a class="lightbox" href="images/Game 7 Mockup-02.png"></a>
+        <a class="lightbox" href="images/Game 7 Mockup-03.png"></a>
+        <a class="lightbox" href="images/Game 7 Mockup-04.png"></a>
+    </div>
+
+    <div class="gallery8">
+        <a class="lightbox" href="images/Game Mockup 8-01.png"></a>
+        <a class="lightbox" href="images/Game Mockup 8-02.png"></a>
+        <a class="lightbox" href="images/Game Mockup 8-03.png"></a>
+        <a class="lightbox" href="images/Game Mockup 8-04.png"></a>
+        <a class="lightbox" href="images/Game Mockup 8-05.png"></a>
+    </div>
+
+    <div class="gallery9">
+        <a class="lightbox" href="images/Game Mockup 9-02.png"></a>
+        <a class="lightbox" href="images/Game Mockup 9-01.png"></a>
+        <a class="lightbox" href="images/Game Mockup 9-03.png"></a>
+    </div>
+
+    <div class="gallery10">
+        <a class="lightbox" href="images/Game Mockup 10-01.png"></a>
+        <a class="lightbox" href="images/Game Mockup 10-02.png"></a>
+        <a class="lightbox" href="images/Game Mockup 10-03.png"></a>
+        <a class="lightbox" href="images/Game Mockup 10-04.png"></a>
+    </div>
+
+    <div class="gallery11">
+        <a class="lightbox" href="images/Game Mockup 11-01.png"></a>
+        <a class="lightbox" href="images/Game Mockup 11-02.png"></a>
+        <a class="lightbox" href="images/Game Mockup 11-03.png"></a>
+        <a class="lightbox" href="images/Game Mockup 11-04.png"></a>
+    </div>
+
+    <div class="gallery12">
+        <a class="lightbox" href="images/Game Mockup 12-01.png"></a>
+        <a class="lightbox" href="images/Game Mockup 12-02.png"></a>
+        <a class="lightbox" href="images/Game Mockup 12-03.png"></a>
+    </div>
+
+    <div class="gallery13">
+        <a class="lightbox" href="images/Game Mockup 13-01.png"></a>
+        <a class="lightbox" href="images/Game Mockup 13-02.png"></a>
+        <a class="lightbox" href="images/Game Mockup 13-03.png"></a>
+    </div>
+
+    <div class="gallery14">
+        <a class="lightbox" href="images/Game 14 Mockup-01.png"></a>
+        <a class="lightbox" href="images/Game 14 Mockup-02.png"></a>
+        <a class="lightbox" href="images/Game 14 Mockup-03.png"></a>
+        <a class="lightbox" href="images/Game 14 Mockup-04.png"></a>
+    </div>
+
+    <div class="gallery15">
+        <a class="lightbox" href="images/Game Mockup 15-01.png"></a>
+        <a class="lightbox" href="images/Game Mockup 15-02.png"></a>
+        <a class="lightbox" href="images/Game Mockup 15-03.png"></a>
+        <a class="lightbox" href="images/Game Mockup 15-04.png"></a>
+    </div>
+
+    <div class="gallery16">
+        <a class="lightbox" href="images/Game Mockup 16-01.png"></a>
+        <a class="lightbox" href="images/Game Mockup 16-02.png"></a>
+        <a class="lightbox" href="images/Game Mockup 16-03.png"></a>
+    </div>
+
+    <div class="gallery17">
+        <a class="lightbox" href="images/Game 17 Mockup-01.png"></a>
+        <a class="lightbox" href="images/Game 17 Mockup-02.png"></a>
+        <a class="lightbox" href="images/Game 17 Mockup-03.png"></a>
     </div>
 
 </div>
 
 
+
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+    function gallery0() {
+        const gallery = baguetteBox.run('.gallery0');
+        baguetteBox.show(0, gallery[0]);
+    }
+    function gallery1() {
+        const gallery = baguetteBox.run('.gallery1');
+        baguetteBox.show(0, gallery[0]);
+    }
+    function gallery2() {
+        const gallery = baguetteBox.run('.gallery2');
+        baguetteBox.show(0, gallery[0]);
+    }
+    function gallery3() {
+        const gallery = baguetteBox.run('.gallery3');
+        baguetteBox.show(0, gallery[0]);
+    }
+    function gallery4() {
+        const gallery = baguetteBox.run('.gallery4');
+        baguetteBox.show(0, gallery[0]);
+    }
+    function gallery5() {
+        const gallery = baguetteBox.run('.gallery5');
+        baguetteBox.show(0, gallery[0]);
+    }
+    function gallery6() {
+        const gallery = baguetteBox.run('.gallery6');
+        baguetteBox.show(0, gallery[0]);
+    }
+    function gallery7() {
+        const gallery = baguetteBox.run('.gallery7');
+        baguetteBox.show(0, gallery[0]);
+    }
+    function gallery8() {
+        const gallery = baguetteBox.run('.gallery8');
+        baguetteBox.show(0, gallery[0]);
+    }
+    function gallery9() {
+        const gallery = baguetteBox.run('.gallery9');
+        baguetteBox.show(0, gallery[0]);
+    }
+    function gallery10() {
+        const gallery = baguetteBox.run('.gallery10');
+        baguetteBox.show(0, gallery[0]);
+    }
+    function gallery11() {
+        const gallery = baguetteBox.run('.gallery11');
+        baguetteBox.show(0, gallery[0]);
+    }
+    function gallery12() {
+        const gallery = baguetteBox.run('.gallery12');
+        baguetteBox.show(0, gallery[0]);
+    }
+    function gallery13() {
+        const gallery = baguetteBox.run('.gallery13');
+        baguetteBox.show(0, gallery[0]);
+    }
+    function gallery14() {
+        const gallery = baguetteBox.run('.gallery14');
+        baguetteBox.show(0, gallery[0]);
+    }
+    function gallery15() {
+        const gallery = baguetteBox.run('.gallery15');
+        baguetteBox.show(0, gallery[0]);
+    }
+    function gallery16() {
+        const gallery = baguetteBox.run('.gallery16');
+        baguetteBox.show(0, gallery[0]);
+    }
+    function gallery17() {
+        const gallery = baguetteBox.run('.gallery17');
+        baguetteBox.show(0, gallery[0]);
+    }
+</script>
 </body>
 </html>

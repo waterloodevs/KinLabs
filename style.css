@@ -20,6 +20,13 @@ a:hover {
 }
 
 
+img {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
 
 html,
 body {
@@ -39,8 +46,8 @@ body {
     /*box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);*/
 }
 
-*:focus {
-    outline: none;
+*:focus, button {
+    outline: none !important;
 }
 
 .icons {
@@ -54,16 +61,54 @@ body {
 
 .cover-container {
     max-width: 60em;
-    border: 1px solid white;
 }
 
 .left-container{
-    border: 1px solid white;
 }
 
 .right-container{
-    border: 1px solid white;
 }
+
+/*.modal {*/
+/*    color: black;*/
+/*    width: 100%;*/
+/*}*/
+/*.modal-dialog, .modal-content, .modal-body{*/
+/*    background-color: rgba(0,0,0,.0001) !important;*/
+/*    width: 100%;*/
+/*}*/
+/*.screenshot{*/
+/*    width: 100%;*/
+/*    padding: 25px;*/
+/*}*/
+
+
+
+/*.gallery-container {*/
+/*    max-width: 100px;*/
+/*}*/
+
+
+
+#baguetteBox-overlay .full-image {
+    padding: 100px !important;
+}
+/* Styles for the gallery */
+
+/*.gallery0 {*/
+/*    padding: 800px;*/
+/*}*/
+
+
+/*.gallery0 img {*/
+/*    border-radius: 2px;*/
+/*}*/
+
+/*.baguetteBox-button {*/
+/*    background-color: transparent !important;*/
+/*}*/
+
+
 
 /*
  * Header
