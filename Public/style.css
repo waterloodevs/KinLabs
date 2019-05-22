@@ -84,3 +84,8 @@ body {
 #baguetteBox-overlay .full-image {
     padding: 5% !important;
 }
+
+.placeholder-img{
+    outline: none;
+    border: none;
+}
