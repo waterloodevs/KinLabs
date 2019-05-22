@@ -81,9 +81,9 @@ body {
     }
 }
 
-#baguetteBox-overlay .full-image {
-    padding: 5% !important;
-}
+/*#baguetteBox-overlay .full-image {*/
+/*    padding: 5% !important;*/
+/*}*/
 
 .placeholder-img{
     outline: none;
